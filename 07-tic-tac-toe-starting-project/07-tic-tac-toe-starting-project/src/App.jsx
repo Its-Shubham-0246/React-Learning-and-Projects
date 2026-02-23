@@ -1,5 +1,5 @@
 import Player from './components/Player.jsx';
-
+import { useState,useEffect } from 'react';
 function App() {
   
 
