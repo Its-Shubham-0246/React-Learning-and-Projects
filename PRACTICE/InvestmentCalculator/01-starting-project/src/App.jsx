@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import Header from './components/Header.jsx'
 import UserInput from './components/UserInput.jsx'
@@ -10,6 +9,7 @@ function App() {
   expectedReturn:6,
   duration:5
  });
+ 
  function handleChange(inputIdentifier,newValue){
   setUserInput(prevInput => {
    return {
