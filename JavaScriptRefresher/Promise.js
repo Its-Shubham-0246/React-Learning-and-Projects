@@ -1,5 +1,5 @@
+import axios from 'axios'
 var success = true;
-
 let promise = new Promise((resolve,reject) => {
  if(success){
   resolve("Data Connected");
@@ -9,8 +9,7 @@ let promise = new Promise((resolve,reject) => {
 });
 
 //consuming promise
-fetch("https://jsonplaceholder.typicode.com/users") //
-.then(response => response.json())
+axios.get("https://jsonplaceholder.typicode.com/users") //
 .then(data => {
  console.log(data);
  return data;
@@ -20,3 +19,4 @@ fetch("https://jsonplaceholder.typicode.com/users") //
 })
 .catch(error => console.log(error))
 
+//async await
