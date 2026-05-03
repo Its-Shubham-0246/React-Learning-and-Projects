@@ -1,18 +1,17 @@
-import Header from './components/Header/Header.jsx';
-import CoreConcepts from './components/CoreConcepts.jsx';
-import Examples from './components/Examples.jsx';
-
+import Player from './components/Player.jsx';
+import TimerChallenge from './components/TimerChallenge.jsx';
 function App() {
   return (
     <>
-      <Header/>
-      <main>
-        <CoreConcepts/>
-        <Examples/>
-      </main>
+      <Player />
+      <div id="challenges">
+        <TimerChallenge title = 'Easy' targetTime = {1}/>
+        <TimerChallenge title = 'not easy' targetTime = {5}/>
+        <TimerChallenge title = 'getting tough' targetTime= {10}/>
+        <TimerChallenge title = 'pros only' targetTime = {15}/>
+      </div>
     </>
   );
 }
 
 export default App;
-
